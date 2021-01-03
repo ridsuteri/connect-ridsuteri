@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/c035598f8c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/fontawesome.min.css"
+        integrity="sha512-kJ30H6g4NGhWopgdseRb8wTsyllFUYIx3hiUwmGAkgA9B/JbzUBDQVr2VVlWGde6sdBVOG7oU8AL35ORDuMm8g=="
+        crossorigin="anonymous" />
+    <!--font  for writing effect -->
+    <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riddhi Suteri</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="vantaBird">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+        <script>
+            VANTA.BIRDS({
+                el: "#vantaBird",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                birdSize: 0.90,
+                wingSpan: 24.00,
+                speedLimit: 3.00,
+                separation: 87.00,
+                alignment: 72.00,
+                cohesion: 89.00,
+                quantity: 3.00
+            })
+        </script>
+        <div class="image">
+            <img src="images/img3.jpg" alt="riddhi's image" class="center">
+        </div>
+        <div id="typedtext" class="center"></div>
+
+        <div class="social-menu">
+            <h1></h1>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/riddhi-suteri" target="blank"><i
+                            class="fa fa-linkedin"></i></a>
+                </li>
+                <li><a href="https://github.com/ridsuteri" target="blank"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://twitter.com/rid_suteri" target="blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://instagram.com/ridsuteri" target="blank"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://medium.com/@ridsuteri" target="blank"><i class="fa fa-medium"></i></a></li>
+                <li><a href="https://ridsuteri.netlify.app/" target="blank"><i class="fa fa-globe"></i></a></li>
+
+            </ul>
+        </div>
+    </div>
+    <script>
+        var x = 0;
+        var textEffect = "Hey! I am  Riddhi Suteri, Let's connect 😉";
+        var container = document.getElementById('typedtext');
+        function animate() {
+            if (x < textEffect.length) {
+                container.innerHTML += textEffect.charAt(x);
+                x++;
+                setTimeout(animate, 100);
+            }
+        }
+        animate();
+    </script>
+</body>
+</html>

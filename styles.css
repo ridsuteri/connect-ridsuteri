@@ -1,0 +1,147 @@
+body {
+    background-color: #d8d8d8;
+    margin: 0;
+}
+h1 {
+  text-align: center;
+}
+
+/* for typing effect */
+#typedtext{
+    position: absolute;
+    font-family: 'Waiting for the Sunrise', cursive; 
+    font-size:30px;  
+    letter-spacing: 6px; 
+    font-weight: bold;
+    color: #fff;
+    /* background-color:#fff3e2; */
+    left: 28%;
+    top: 55%;
+}
+
+/*vanta js background background */
+#vantaBird{
+    position: absolute;
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+.image{
+    position: relative;
+    top: 10%;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 50%; */
+  }
+.image img{
+    
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+.social-menu ul {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: space-evenly;
+}
+.social-menu ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+.social-menu ul li .fa {
+    color: #000000;
+    font-size: 25px;
+    line-height: 50px;
+    transition: .5s;
+}
+.social-menu ul li .fa:hover {
+    color: #ffffff;
+}
+.social-menu ul li a {
+    position: relative;
+    display: block;
+    line-height: 1.5;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    transition: 0.5s;
+    transform: translate(0,0px);
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
+.social-menu ul li a:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+.social-menu ul li:nth-child(1) a:hover {
+    background-color: #2867B2;
+}
+.social-menu ul li:nth-child(2) a:hover {
+    background-color: #211F1F;
+}
+.social-menu ul li:nth-child(3) a:hover {
+    background-color: #00acee;
+}
+.social-menu ul li:nth-child(4) a:hover {
+    background-color: #FD1D1D;
+}
+.social-menu ul li:nth-child(5) a:hover {
+    background-color: #211F1F;
+}
+.social-menu ul li:nth-child(6) a:hover {
+    background-color: #405DE6;
+}
+
+/* media queries */
+
+@media all and (min-width:320px) and (max-width:641px) {  
+    #typedtext{
+        font-size:20px;  
+        letter-spacing: 2px; 
+        color: #fff;
+        left: 25%;
+        top: 40%;
+    }  
+    .image img{
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+    }  
+    .social-menu ul li a {
+    margin-top: 7px;
+    }
+}
+@media (min-width:641px) and (max-width:841px)  { 
+    #typedtext{
+        font-size:20px;  
+        letter-spacing: 2px; 
+        color: #fff;
+        left: 30%;
+        top: 50%;
+    }  
+    .image img{
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+    }
+    .social-menu ul li a {
+        margin-top: 7px;
+        }
+}
